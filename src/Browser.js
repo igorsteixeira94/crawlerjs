@@ -7,7 +7,7 @@ module.exports = class Crawler {
   async start() {
    try {
 
-    this.browser = await puppeteer.launch({headless:false});
+    this.browser = await puppeteer.launch();
 
     const page = await this.browser.newPage();
 
