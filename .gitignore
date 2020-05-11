@@ -1,2 +1,5 @@
 node_modules/
 saida.txt
+tmp/*
+!tmp/.gitkeep
+yarn.lock

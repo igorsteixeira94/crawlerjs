@@ -1,8 +1,10 @@
 {
   "dependencies": {
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
     "puppeteer": "2.0.0"
   },
   "scripts": {
-    "start": "node src/index.js > saida.txt"
+    "start": "node src/main.js"
   }
 }
