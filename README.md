@@ -25,15 +25,12 @@ A página em questão utiliza paginação e um infinite-scroll para apresentar o
  
  
  
- Obs.: Como finalizei em cima da hora, contando que fui "pego de surpresa com o desafio", não modelei de uma maneira mais organizada dos dados. Portanto para rodar o crawler basta :
+Para rodar o crawler basta :
 - Clonar o repositorio;
 - Entrar na pasta cd crawlerjs
 - Rodar um yarn install para instalação das dependencias 
 - Yarn start para rodar o script.
- 
- A saída é gerada em um arquivo saida.txt. Apenas joguei a saída que seria em tela, para um arquivo > saida.txt
- 
-  # Resultado
-   Para finalizar a requisição busca todos os produtos ! Para cada 1000 produtos em testes demorou cerca de 8mins para realizar o crawler. Infelizmente ao meu ver uma solução bastante onerosa. *Mais detalhes no código*
+- *Os arquivos são salvos na pasta /tmp/products.csv*
+
   
   *Utilizado apenas para exercicio "academico", em nenhum momento o presente script vem a ferir os termos de uso dos dados e informações.*
