@@ -45,14 +45,14 @@ module.exports = class Crawler {
 
   //Extrair os dados relacionados a pagina que ele se encontra !
   async extractProducts() {
-    
+
 
     try {
       this.offset = (this.pageIndex - 1) * this.limit;
       console.log(`Extraindo dados da página ${this.pageIndex}`);
       const total = await this.page.evaluate((offset) => {
 
-     
+
         //Acesso os elementos da infinite-scroll, com isso pego apenas os produtos visiveis(carregados)
         //Acesso a div panel-product, onde pego as informações como preço e nome.
         const extratedElements = document.querySelectorAll('infinite-scroll .panel-product');
@@ -71,12 +71,12 @@ module.exports = class Crawler {
       }
         return products;
       },(this.offset))
-      
+
       return(total)
 
     } catch (error) {
       return error;
-      
+
     }
 
 
